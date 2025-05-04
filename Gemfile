@@ -59,3 +59,5 @@ gem "inertia_rails", "~> 3.8"
 gem "net-http-persistent", "~> 4.0"
 
 gem "vite_rails", "~> 3.0"
+
+gem "pry", "~> 0.15.2"
