@@ -10,5 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 0) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_25_214503) do
+  create_table "assets", force: :cascade do |t|
+    t.string "symbol"
+    t.integer "quantity"
+    t.decimal "cost"
+    t.decimal "market_value"
+    t.string "sector"
+    t.string "category"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "incomes", force: :cascade do |t|
+    t.string "symbol"
+    t.string "income_type"
+    t.decimal "amount"
+    t.date "payment_date"
+    t.integer "quantity"
+    t.decimal "tax_withheld"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "operations", force: :cascade do |t|
+    t.string "op_type"
+    t.integer "quantity"
+    t.string "symbol"
+    t.string "cost"
+    t.string "currency"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 end

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  op_type:
+  quantity: 1
+  symbol: MyString
+  cost: MyString
+  currency: MyString
+
+two:
+  op_type:
+  quantity: 1
+  symbol: MyString
+  cost: MyString
+  currency: MyString

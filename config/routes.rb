@@ -14,4 +14,17 @@ Rails.application.routes.draw do
   # root "posts#index"
   
   root "dashboard#index"
+  get "assets", to: "assets#index"
+
+  # Operations/Transactions routes
+  get "transactions", to: "operations#index"
+  post "operations", to: "operations#create"
+  patch "operations/:id", to: "operations#update"
+  delete "operations/:id", to: "operations#destroy"
+
+  # Income routes
+  get "income", to: "incomes#index"
+  post "incomes", to: "incomes#create"
+  patch "incomes/:id", to: "incomes#update"
+  delete "incomes/:id", to: "incomes#destroy"
 end
