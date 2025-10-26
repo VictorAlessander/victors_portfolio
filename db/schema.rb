@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_25_214503) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_25_222829) do
   create_table "assets", force: :cascade do |t|
     t.string "symbol"
     t.integer "quantity"
@@ -20,6 +20,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_10_25_214503) do
     t.string "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "last_price_update"
+    t.decimal "current_price"
   end
 
   create_table "incomes", force: :cascade do |t|

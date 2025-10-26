@@ -9,6 +9,8 @@ interface Asset {
   marketValue?: number;
   sector: string;
   category: string;
+  last_price_update?: string;
+  current_price?: number;
 }
 
 export default Asset;

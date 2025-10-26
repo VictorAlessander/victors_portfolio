@@ -61,3 +61,7 @@ gem "net-http-persistent", "~> 4.0"
 gem "vite_rails", "~> 3.0"
 
 gem "pry", "~> 0.15.2"
+
+gem "mission_control-jobs", "~> 1.1"
+
+gem "propshaft", "~> 1.3"

@@ -21,6 +21,8 @@ import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDownIcon } from "lucide-react";
 import Header from "@/components/ui/Header";
+import RefreshPricesButton from "@/components/Assets/RefreshPricesButton";
+import dayjs from "dayjs";
 
 const formatCurrency = (value: number) => {
   return new Intl.NumberFormat("pt-BR", {
@@ -277,12 +279,26 @@ function Assets(props: AssetsProps) {
   const totalProfitLoss = totalMarketValue - totalInvested;
   const totalProfitLossPercentage = totalInvested > 0 ? (totalProfitLoss / totalInvested) * 100 : 0;
 
+  // Find the most recent price update
+  const lastUpdate = props.data
+    .filter(asset => asset.last_price_update)
+    .map(asset => new Date(asset.last_price_update!))
+    .sort((a, b) => b.getTime() - a.getTime())[0];
+
   return (
     <>
       <Header />
       <div className="container mx-auto p-6">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold">Assets Portfolio</h1>
+          <div>
+            <h1 className="text-3xl font-bold">Assets Portfolio</h1>
+            {lastUpdate && (
+              <p className="text-sm text-gray-500 mt-1">
+                Last price update: {dayjs(lastUpdate).format("DD/MM/YYYY HH:mm")}
+              </p>
+            )}
+          </div>
+          <RefreshPricesButton />
         </div>
 
         {/* Summary Cards */}
