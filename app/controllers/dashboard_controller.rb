@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
     analytics = PortfolioAnalyticsService.new
     portfolio_data = analytics.portfolio_summary
 
-    render inertia: 'Dashboard/index', props: {
+    render inertia: "Dashboard/Index", props: {
       portfolio: portfolio_data
     }
   end

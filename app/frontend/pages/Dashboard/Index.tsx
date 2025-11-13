@@ -110,7 +110,7 @@ export default function Dashboard({ portfolio }: DashboardProps) {
                   ))}
                 </Pie>
                 <Tooltip formatter={(value: number) => formatCurrency(value)} />
-                <Legend />
+                {/*<Legend />*/}
               </PieChart>
             </ResponsiveContainer>
           </div>
