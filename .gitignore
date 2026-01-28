@@ -33,6 +33,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Allow development credentials key to be shared (contains no sensitive data)
+!/config/credentials/development.key
+
 # Vite Ruby
 /public/vite*
 node_modules
