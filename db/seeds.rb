@@ -5,20 +5,21 @@
 #
 ## Portfolio data from assets.csv (cost = preço médio * quantidade)
 # portfolio_data = [
-#  { symbol: "BBAS3", quantity: 480, avg_price: 22.28, cost: 10694.40, sector: "Finance", category: "Stock" },
-#  { symbol: "BBDC3", quantity: 3226, avg_price: 14.35, cost: 46293.10, sector: "Finance", category: "Stock" },
-#  { symbol: "CMIG4", quantity: 2590, avg_price: 8.75, cost: 22662.50, sector: "Utilities", category: "Stock" },
-#  { symbol: "CSAN3", quantity: 6882, avg_price: 11.72, cost: 80657.04, sector: "Consumer Goods", category: "Stock" },
-#  { symbol: "DEXP3", quantity: 5300, avg_price: 10.41, cost: 55173.00, sector: "Consumer Services", category: "Stock" },
-#  { symbol: "EALT4", quantity: 2400, avg_price: 13.00, cost: 31200.00, sector: "Basic Materials", category: "Stock" },
-#  { symbol: "JALL3", quantity: 12400, avg_price: 5.19, cost: 64356.00, sector: "Consumer Services", category: "Stock" },
-#  { symbol: "KLBN11", quantity: 1550, avg_price: 18.51, cost: 28690.50, sector: "Basic Materials", category: "Stock" },
-#  { symbol: "KLBN4", quantity: 7480, avg_price: 3.63, cost: 27152.40, sector: "Basic Materials", category: "Stock" },
-#  { symbol: "ODPV3", quantity: 981, avg_price: 12.83, cost: 12586.23, sector: "Healthcare", category: "Stock" },
-#  { symbol: "RECV3", quantity: 3622, avg_price: 16.86, cost: 61066.92, sector: "Finance", category: "Stock" },
-#  { symbol: "SIMH3", quantity: 7300, avg_price: 5.47, cost: 39931.00, sector: "Basic Materials", category: "Stock" },
-#  { symbol: "TTEN3", quantity: 260, avg_price: 14.04, cost: 3650.40, sector: "Utilities", category: "Stock" },
-#  { symbol: "UNIP6", quantity: 825, avg_price: 60.39, cost: 49821.75, sector: "Utilities", category: "Stock" }
+#  { symbol: "UNIP6", quantity: 825, avg_price: 60.39, cost: 49824.45, market_value: 51455.25, sector: "Utilities", category: "Stock" },
+#  { symbol: "CSAN3", quantity: 7946, avg_price: 11.72, cost: 93119.12, market_value: 46960.86, sector: "Consumer Goods", category: "Stock" },
+#  { symbol: "SIMH3", quantity: 7000, avg_price: 5.47, cost: 38290.00, market_value: 46200.00, sector: "Basic Materials", category: "Stock" },
+#  { symbol: "BBDC3", quantity: 2426, avg_price: 14.35, cost: 34813.87, market_value: 44856.74, sector: "Finance", category: "Stock" },
+#  { symbol: "DEXP3", quantity: 5962, avg_price: 9.25, cost: 55148.50, market_value: 44238.04, sector: "Consumer Services", category: "Stock" },
+#  { symbol: "RECV3", quantity: 3622, avg_price: 16.86, cost: 61066.92, market_value: 41544.34, sector: "Finance", category: "Stock" },
+#  { symbol: "JALL3", quantity: 12500, avg_price: 5.17, cost: 64625.00, market_value: 39250.00, sector: "Consumer Services", category: "Stock" },
+#  { symbol: "EALT4", quantity: 2400, avg_price: 13.00, cost: 31200.00, market_value: 33960.00, sector: "Basic Materials", category: "Stock" },
+#  { symbol: "KLBN11", quantity: 1565, avg_price: 18.33, cost: 28686.45, market_value: 30282.75, sector: "Basic Materials", category: "Stock" },
+#  { symbol: "CMIG4", quantity: 2590, avg_price: 8.75, cost: 22651.83, market_value: 29603.70, sector: "Utilities", category: "Stock" },
+#  { symbol: "KLBN4", quantity: 7556, avg_price: 3.63, cost: 27428.28, market_value: 29241.72, sector: "Basic Materials", category: "Stock" },
+#  { symbol: "ODPV3", quantity: 2581, avg_price: 12.02, cost: 31023.62, market_value: 29191.11, sector: "Healthcare", category: "Stock" },
+#  { symbol: "TTEN3", quantity: 1460, avg_price: 15.79, cost: 23053.40, market_value: 23520.60, sector: "Utilities", category: "Stock" },
+#  { symbol: "BBAS3", quantity: 480, avg_price: 22.28, cost: 10694.40, market_value: 12307.20, sector: "Finance", category: "Stock" },
+#  { symbol: "RAPT4", quantity: 1300, avg_price: 6.15, cost: 7995.00, market_value: 8788.00, sector: "Industrials", category: "Stock" }
 # ]
 #
 ## Create operations and assets from portfolio data
